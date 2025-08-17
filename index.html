@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="weather-app-container">
+        <header class="search-container">
+            <input type="text" id="city-input" class="search-input" placeholder="Masukkan Nama Kota...">
+            <button id="search-button" class="search-button">
+                <img src="asset/search.svg" alt="Search">
+            </button>
+        </header>
+
+        <section class="weather-info-container hidden" >
+            <div class="current-weather">
+                <h1 id="city-name">Purwokerto, ID</h1>
+                <div class="main-info">
+                    <img id="weather-icon" src="asset/sun.svg" alt="icon-cuaca" class="weather-icon-large">
+                    <p id="temperature" class="temperature-large">28°C</p>
+                </div>
+                <p id="weather-condition" class="condition-text">Cerah Berawan</p>
+            </div>
+            <div class="details-container">
+                <div class="detail-item">
+                    <img src="asset/droplet.svg" alt="Humidity Icon" class="detail-icon">
+                    <p class="detail-label">Kelembapan</p>
+                    <p id="humidity" class="detail-value">85%</p>
+                </div>
+                <div class="detail-item">
+                    <img src="asset/wind.svg" alt="Wind Icon" class="detail-icon">
+                    <p class="detail-label">Kecepatan Angin</p>
+                    <p id="wind-speed" class="detail-value">10 km/j</p>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h2>
+                    Perkiraan 5 Hari
+                </h2>
+                <div class="forecast-grid">
+                    <div class="forecast-card">
+                        <p class="forecast-day">Selasa</p>
+                        <img src="asset/cloud-rain.svg" alt="Hujan" class="forecast-icon">
+                        <p class="forecast-temp">29°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="forecast-day">Rabu</p>
+                        <img src="asset/cloud.svg" alt="Berawan" class="forecast-icon">
+                        <p class="forecast-temp">27°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="forecast-day">Kamis</p>
+                        <img src="asset/cloud-lightning.svg" alt="Hujan" class="forecast-icon">
+                        <p class="forecast-temp">28°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="forecast-day">Jumat</p>
+                        <img src="asset/cloud-lightning.svg" alt="Badai" class="forecast-icon">
+                        <p class="forecast-temp">24°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="forecast-day">Sabtu</p>
+                        <img src="asset/cloud-drizzle.svg" alt="Gerimis" class="forecast-icon">
+                        <p class="forecast-temp">29°C</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="message-container" id="message-container"> 
+            <p id="message-text">Memuat data...</p>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

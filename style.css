@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.weather-app-container {
+    width: 90%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0,1);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-button {
+    border: none;
+    background: #f0f0f0;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: #dcdcdc;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#city-name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon-large {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.temperature-large {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.condition-text {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-label {
+    font-size: 14px;
+    color: #888;
+}
+
+.detail-value {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.forecast-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.forecast-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 18%;
+}
+
+.forecast-day {
+    font-size: 14px;
+    color: #555;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.forecast-temp {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.message-container {
+    text-align: center;
+    padding: 40px 20px;
+    color: #555;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
