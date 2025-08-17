@@ -3,7 +3,7 @@
 Sebuah proyek aplikasi cuaca sederhana yang dibuat menggunakan HTML, CSS, dan JavaScript murni. Proyek ini bertujuan untuk melatih fundamental pengembangan frontend, terutama dalam manipulasi DOM dan integrasi dengan API eksternal.
 
 
-![Tampilan Aplikasi](docs/screenshot.png)
+![Tampilan Aplikasi](docs/Screenshot.png)
 
 
 ## Fitur Utama
